@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://inkbox.com/.well-known/
+host: https://inkbox.com
+note: >-
+  Inkbox runs its storefront and customer authentication on Shopify. The
+  OpenID Connect / OAuth authorization-server discovery documents below are
+  served on the inkbox.com host but are issued by Shopify's Customer Account
+  API (issuer https://shopify.com/authentication/72130756678). They describe
+  shopper login for the store, not a first-party Inkbox developer API.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 200
+  file: inkbox-openid-configuration.json
+  issuer: https://shopify.com/authentication/72130756678
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: inkbox-oauth-authorization-server.json
+  issuer: https://shopify.com/authentication/72130756678
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
