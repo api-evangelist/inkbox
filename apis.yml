@@ -40,7 +40,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-10-06'
 tags:
 - Company
 - E-Commerce
@@ -59,6 +59,8 @@ tags_raw:
 - Custom Products
 apis: []
 common:
+- url: https://inkbox.com/blogs/news
+  type: Blog
 - type: DomainSecurity
   url: security/inkbox-domain-security.yml
 - type: Website
